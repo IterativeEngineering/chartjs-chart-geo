@@ -2,11 +2,13 @@
   "compilerOptions": {
     "target": "ES2018",
     "module": "ESNext",
-    "lib": ["DOM", "ES2020"],
+    "lib": [
+      "DOM",
+      "ES2020"
+    ],
     "importHelpers": false,
     "declaration": false,
     "sourceMap": true,
-    "strict": true,
     "removeComments": true,
     "verbatimModuleSyntax": false,
     "experimentalDecorators": true,
@@ -31,5 +33,9 @@
       "rollup/parseAst": ["./node_modules/rollup/dist/parseAst"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "docs/**/*.tsx"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "docs/**/*.tsx"
+  ]
 }
