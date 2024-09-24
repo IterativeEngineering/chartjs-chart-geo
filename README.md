@@ -234,8 +234,7 @@ yarn docs
 ### Building for GitHub release
 
 ```sh
-npm run build  
-tar czvf package.tgz package.json build/ 
+npm run build && npm pack
 ```
 
 1. Run `npm run build`.
