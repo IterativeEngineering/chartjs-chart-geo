@@ -311,6 +311,7 @@ export class GeoFeature extends Element<IGeoFeatureProps, IGeoFeatureOptions> im
   isSmallCountry(alpha2: string, width: number, height: number, circleCenterX: number, circleCenterY: number) {
     const isSmallCountry = !!alpha2 && (width < 5 || height < 5);
     
+    console.warn('issmall', alpha2);
     if (isSmallCountry && !window['chartGeoSmallCountries'].includes(alpha2)) {
       window['chartGeoSmallCountries'].push(alpha2);
       window['chartGeoSmallCountriesCircleCenters'].push([circleCenterX, circleCenterY]);
